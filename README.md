@@ -17,3 +17,8 @@ Currently, the build process builds for ``x86_x64`` only. If you want to change 
 3. Click on "create version"
 4. Upload the zip file
 5. Add/update your lambda function with the newly deployed layer
+
+## About ghostscript in lambda
+You can find the gs binary in `/opt/bin/gs` (Lambda unpacks layers to `/opt`).
+
+Run `/opt/bin/gs --version` to check the deployed version.
